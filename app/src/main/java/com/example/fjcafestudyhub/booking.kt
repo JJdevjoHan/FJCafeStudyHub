@@ -1,6 +1,8 @@
 package com.example.fjcafestudyhub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +16,10 @@ class booking : AppCompatActivity() {
 
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
             finish()
+        }
+
+        findViewById<Button>(R.id.btnConfirmBooking).setOnClickListener {
+            startActivity(Intent(this, confirmation::class.java))
         }
     }
 }

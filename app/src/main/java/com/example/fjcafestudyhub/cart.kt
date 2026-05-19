@@ -40,15 +40,10 @@ class cart : AppCompatActivity() {
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
             finish() // goes back to previous screen
         }
-        /*
-        findViewById<TextView>(R.id.btnOrder).setOnClickListener {
-            startActivity(Intent(this, modeoforder::class.java))
-        }
-        findViewById<TextView>(R.id.btnReview).setOnClickListener {
-            // show review dialog or go to review screen
-        }
 
-         */
+        findViewById<TextView>(R.id.btnOrder).setOnClickListener {
+            startActivity(Intent(this, confirmation::class.java))
+        }
 
         NavButtons()
     }

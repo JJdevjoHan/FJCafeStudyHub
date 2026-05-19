@@ -1,0 +1,36 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5E6D3"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/confirmationIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/cafe_confirmation"
+        android:contentDescription="Confirmation Icon"/>
+
+    <TextView
+        android:id="@+id/confirmationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Confirmed!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/confirmationDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caramel Latte x1\n₱120.00"
+        android:textSize="16sp"
+        android:textColor="#6D4C41"
+        android:gravity="center"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

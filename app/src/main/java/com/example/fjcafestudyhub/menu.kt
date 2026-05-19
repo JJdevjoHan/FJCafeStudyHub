@@ -40,7 +40,18 @@ class menu : AppCompatActivity() {
             "A creamy slice of classic New York cheesecake.")
     )
 
-    private val allList get() = drinksList + pastryList
+    private val roomList = listOf(
+        Product("Quiet Study Room", "₱50/hr", R.drawable.study_room, "Study Hub",
+            "A peaceful room designed for focused individual study."),
+        Product("Group Study Room", "₱120/hr", R.drawable.group_room, "Study Hub",
+            "Spacious room for collaborative group sessions."),
+        Product("Presentation Hub", "₱200/hr", R.drawable.presentation_room, "Study Hub",
+            "Equipped with projector and whiteboard for presentations."),
+        Product("Cozy Corner", "₱80/hr", R.drawable.corner_room, "Study Hub",
+            "Comfortable space with couches for relaxed studying.")
+    )
+
+    private val allList get() = drinksList + pastryList + roomList
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,7 +80,7 @@ class menu : AppCompatActivity() {
             setActiveTab(tabPastry, listOf(tabCoffee, tabHub, tabAll))
         }
         tabHub.setOnClickListener {
-            loadProducts(rvMenu, txtSectionLabel, pastryList, "Hub Specials")
+            loadProducts(rvMenu, txtSectionLabel, roomList, "Hub Available")
             setActiveTab(tabHub, listOf(tabCoffee, tabPastry, tabAll))
         }
         tabAll.setOnClickListener {

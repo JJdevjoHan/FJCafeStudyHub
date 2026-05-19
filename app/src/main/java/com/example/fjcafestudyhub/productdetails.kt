@@ -51,6 +51,10 @@ class productdetails : AppCompatActivity() {
 
         //addtocart button
         findViewById<Button>(R.id.btnAddToCart).setOnClickListener {
+            startActivity(Intent(this, cart::class.java))
+        }
+
+        findViewById<Button>(R.id.btnBuy).setOnClickListener {
             startActivity(Intent(this, modeoforder::class.java))
         }
     }
