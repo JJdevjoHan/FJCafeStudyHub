@@ -26,6 +26,7 @@ class MenuAdapter(
         return ProductViewHolder(view)
     }
 
+
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = products[position]
         holder.img.setImageResource(product.imageRes)

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.FJCafeStudyHub"
         tools:targetApi="31">
         <activity
+            android:name=".booking"
+            android:exported="false" />
+        <activity
+            android:name=".item_hub"
+            android:exported="false" />
+        <activity
+            android:name=".hubmenu"
+            android:exported="false" />
+        <activity
+            android:name=".itemhub"
+            android:exported="false" />
+        <activity
             android:name=".itemmenucard"
             android:exported="true" />
         <activity

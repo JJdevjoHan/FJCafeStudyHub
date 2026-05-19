@@ -2,6 +2,7 @@ package com.example.fjcafestudyhub
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -55,9 +56,9 @@ class homescreen : AppCompatActivity() {
             loadProducts(rvHome, txtSectionLabel, pastryList, "Recommended Pastry")
             setActiveChip(chipPastry, listOf(chipCoffee, chipHub))
         }
-        chipHub.setOnClickListener {
-            loadProducts(rvHome, txtSectionLabel, allList, "Hub Specials")
-            setActiveChip(chipHub, listOf(chipCoffee, chipPastry))
+
+        findViewById<TextView>(R.id.chipHub).setOnClickListener {
+            startActivity(Intent(this, hubmenu::class.java))
         }
 
         //makita tanan se all

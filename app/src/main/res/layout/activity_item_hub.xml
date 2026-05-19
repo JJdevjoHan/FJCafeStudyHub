@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFF8F0"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imgRoom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/study_room"/>
+
+    <TextView
+        android:id="@+id/txtRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiet Study Room"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#3E2723"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/txtRoomPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱50/hr"
+        android:textSize="14sp"
+        android:textColor="#6D4C41"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:background="#3E2723"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/btnSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+
+            android:textColor="#3E2723"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>
