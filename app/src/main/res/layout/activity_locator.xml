@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFF8F0"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            app:tint="#3E2723"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_marginStart="8dp"
+            android:text="Locator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723"/>
+
+    </RelativeLayout>
+
+    <!-- Filter Chips — below top bar -->
+    <HorizontalScrollView
+        android:id="@+id/chipRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chipFindBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Find Branch"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="#4E342E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/chipNearMe"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Near Me"
+                android:textColor="#4E342E"
+                android:textSize="14sp"
+                android:background="#FFF8F0"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/chipOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Open Now"
+                android:textColor="#4E342E"
+                android:textSize="14sp"
+                android:background="#FFF8F0"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Bottom Nav — anchored to bottom FIRST so map can reference it -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#FFF8F0"
+        android:gravity="center"
+        android:elevation="8dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cafe_cart"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Cart" />
+
+        <ImageButton
+            android:id="@+id/navLocator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cafe_locator"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Locator" />
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cafe_home"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Home" />
+
+        <ImageButton
+            android:id="@+id/navRewards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cafe_rewards"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Rewards" />
+
+        <ImageButton
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cafe_settings"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Settings" />
+
+    </LinearLayout>
+
+    <!-- Map fills space between chips and bottom nav -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chipRow"
+        android:layout_above="@id/bottomNav">
+
+        <!-- Static Map Image -->
+        <ImageView
+            android:id="@+id/imgStaticMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cafe_map"
+            android:scaleType="centerCrop"
+            android:contentDescription="FJ Cafe Branch Map"/>
+
+        <!-- My Location FAB -->
+        <ImageView
+            android:id="@+id/fabMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/cafe_location"
+            android:backgroundTint="#4E342E"
+            android:contentDescription="My Location"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout>

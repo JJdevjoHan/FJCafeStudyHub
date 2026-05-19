@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.FJCafeStudyHub" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- PRIMARY BROWN COLOR — fixes all buttons at once -->
+        <item name="colorPrimary">#4E342E</item>
+        <item name="colorPrimaryVariant">#3E2723</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Accent color -->
+        <item name="colorSecondary">#8D6E63</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">#F5E6D3</item>
+
+    </style>
+</resources>

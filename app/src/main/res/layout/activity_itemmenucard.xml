@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF8F0"
+    android:layout_margin="6dp"
+    android:padding="10dp"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/caramel_latte"
+        android:scaleType="centerCrop"
+        android:contentDescription="Caramel Latte"/>
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caramel Latte"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="#3E2723"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/txtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₱120.00"
+        android:textSize="12sp"
+        android:textColor="#6D4C41"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Add to Cart"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#4E342E"/>
+
+</LinearLayout>
