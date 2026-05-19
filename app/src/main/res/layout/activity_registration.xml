@@ -13,7 +13,6 @@
         android:gravity="center"
         android:padding="32dp">
 
-        <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="100dp"
@@ -22,7 +21,6 @@
             android:contentDescription="FJ Cafe Logo"
             android:layout_marginBottom="8dp"/>
 
-        <!-- App Name -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +31,6 @@
             android:layout_marginBottom="24dp"
             android:fontFamily="sans-serif-medium"/>
 
-        <!-- Register Card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +39,6 @@
             android:padding="24dp"
             android:elevation="4dp">
 
-            <!-- Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +56,6 @@
                 android:textColor="#8D6E63"
                 android:layout_marginBottom="24dp"/>
 
-            <!-- Full Name Label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,7 +65,6 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="6dp"/>
 
-            <!-- Full Name Input -->
             <EditText
                 android:id="@+id/etFullName"
                 android:layout_width="match_parent"
@@ -85,7 +79,6 @@
                 android:inputType="textPersonName"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Email Label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,7 +88,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="6dp"/>
 
-            <!-- Email Input -->
+
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
@@ -110,7 +103,6 @@
                 android:inputType="textEmailAddress"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Phone Label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -120,7 +112,6 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="6dp"/>
 
-            <!-- Phone Input -->
             <EditText
                 android:id="@+id/etPhone"
                 android:layout_width="match_parent"
@@ -135,7 +126,6 @@
                 android:inputType="phone"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Password Label -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +135,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="6dp"/>
 
-            <!-- Password Input -->
+
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
@@ -160,7 +150,7 @@
                 android:inputType="textPassword"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Confirm Password Label -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -170,7 +160,6 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="6dp"/>
 
-            <!-- Confirm Password Input -->
             <EditText
                 android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
@@ -185,7 +174,6 @@
                 android:inputType="textPassword"
                 android:layout_marginBottom="24dp"/>
 
-            <!-- Register Button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
@@ -195,8 +183,6 @@
                 android:backgroundTint="#4E342E"
                 />
 
-
-            <!-- Login Redirect -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
