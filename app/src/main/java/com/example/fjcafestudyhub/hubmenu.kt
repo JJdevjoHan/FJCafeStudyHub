@@ -34,6 +34,10 @@ class hubmenu : AppCompatActivity() {
         rvHub.layoutManager = GridLayoutManager(this, 2)
         txtSectionLabel.text = "Available Study Hubs"
 
+        findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         rvHub.adapter = HubAdapter(roomList) { product ->
             val intent = Intent(this, productdetails::class.java).apply {
                 putExtra("name", product.name)

@@ -70,6 +70,11 @@ class homescreen : AppCompatActivity() {
             startActivity(Intent(this, menu::class.java))
         }
 
+        //account
+        findViewById<ImageButton>(R.id.btnProfile).setOnClickListener {
+            startActivity(Intent(this, account::class.java))
+        }
+
         //nav
         setupBottomNav()
     }
