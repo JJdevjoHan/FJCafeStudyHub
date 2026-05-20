@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5E6D3">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="#FFF8F0"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center_vertical"
+            android:elevation="4dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                app:tint="#3E2723"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="About &amp; Contacts"
+                android:textColor="#3E2723"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF8F0"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/cafe_logo"
+                android:contentDescription="FJ Cafe Logo"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FJ's Café &amp; Study Hub"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sip. Study. Relax."
+                android:textSize="13sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textSize="12sp"
+                android:textColor="#BCAAA4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF8F0"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About the Store"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FJ's Café &amp; Study Hub is a cozy space designed for students and professionals who want to enjoy great coffee while staying productive. We offer a variety of drinks, pastries, and a comfortable study environment."
+                android:textSize="13sp"
+                android:textColor="#6D4C41"
+                android:lineSpacingMultiplier="1.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF8F0"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123 Colon Street, Cebu City, Philippines"
+                android:textSize="14sp"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/txtContactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+63 912 345 6789"
+                android:textSize="14sp"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/txtContactEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fjcafe.studyhub@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Hours"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday - Friday: 7:00 AM - 9:00 PM&#10;Saturday - Sunday: 8:00 AM - 10:00 PM"
+                android:textSize="14sp"
+                android:textColor="#3E2723"
+                android:lineSpacingMultiplier="1.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF8F0"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow Us"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="facebook.com/FJsCafeStudyHub"
+                android:textSize="14sp"
+                android:textColor="#4E342E"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D7CCC8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:textSize="12sp"
+                android:textColor="#8D6E63"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\@fjcafe.studyhub"
+                android:textSize="14sp"
+                android:textColor="#4E342E"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2026 FJ's Café &amp; Study Hub. All rights reserved."
+            android:textSize="11sp"
+            android:textColor="#BCAAA4"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
